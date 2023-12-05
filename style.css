@@ -1,9 +1,11 @@
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 75vh;
   margin: 0;
+  position: static;
 }
 
 h1{
@@ -18,7 +20,6 @@ h1{
 }
 
 #calculator-container{
-  position: static;
   /* height: 400px; */
   width: 245px;
   border: 2px solid rgba(209, 198, 198, 0.795);
