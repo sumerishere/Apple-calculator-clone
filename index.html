@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Calculator App</title>
+  <link  rel="icon" href="./icons8-calculator-color-192.png" type="image/x-icon">
+  <link  rel="stylesheet" href="./style.css">
+  <h1>Apple Calculator Clone</h1>
+  <br><br><br><br>
+</head>
+<body>
+  
+  <!-- <hr><br><br> -->
+<main>
+<div id="calculator-container">
+
+  <!-- calculate here  -->
+  <input type="text" id="display" placeholder="Calculator" readonly>
+
+  <div class="btn-container" >
+
+    <button class="buttons" onclick = "currDisplay =''; document.querySelector('#display').value=currDisplay;">c</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '+'; document.querySelector('#display').value=currDisplay;">+</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '-'; document.querySelector('#display').value=currDisplay;">-</button>
+
+    <button class="buttons" id="f-colm" onclick = "currDisplay = currDisplay + '*'; document.querySelector('#display').value=currDisplay;">x</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '7'; document.querySelector('#display').value=currDisplay;">7</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '8'; document.querySelector('#display').value=currDisplay;">8</button>
+    
+    <button class="buttons" onclick = "currDisplay = currDisplay + '9'; document.querySelector('#display').value=currDisplay;">9</button>
+
+    <button class="buttons" id="f-colm" onclick = "currDisplay = currDisplay + '/'; document.querySelector('#display').value=currDisplay;" >÷</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '4'; document.querySelector('#display').value=currDisplay;">4</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '5'; document.querySelector('#display').value=currDisplay;">5</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '6'; document.querySelector('#display').value=currDisplay;">6</button>
+
+    <button class="buttons" id="f-colm" onclick = "currDisplay = currDisplay + '%'; document.querySelector('#display').value=currDisplay;" >%</button>
+
+    <button class="buttons" onclick="currDisplay = currDisplay + '1'; document.querySelector('#display').value=currDisplay; ">1</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '2'; document.querySelector('#display').value=currDisplay;">2</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '3'; document.querySelector('#display').value=currDisplay;">3</button>
+
+    <button class="buttons" id="f-colm" onclick=" currDisplay = eval(currDisplay); document.querySelector('#display').value = currDisplay;" >=</button>
+
+    <button class="buttons" id="zero" onclick = "currDisplay = currDisplay + 0; document.querySelector('#display').value=currDisplay;">0</button>
+
+    <button class="buttons" onclick = "currDisplay = currDisplay + '.'; document.querySelector('#display').value=currDisplay;">.</button>
+   
+  </div>
+</div>
+</main>
+<!--script file-->
+<script src="./App.js"></script>
+</body>
+</html>
